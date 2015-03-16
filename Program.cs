@@ -12,7 +12,6 @@ namespace TextSorter
     {
         static void Main(string[] args)
         {
-            //string dirPath = @"D:\Hiro\Download\Wien Raster\RasterFiles\Mah";
             string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Downloads\Wien Raster\RasterFiles\Mah\";
             string ergebnisDir = @"\Ergebnis\";
             string ergebnisFile = "ergebnis.txt" , ergebnisString;
@@ -28,7 +27,6 @@ namespace TextSorter
                 }
                 if (!File.Exists(dirPath+ergebnisDir+ergebnisFile))
                 {
-                    //File.SetAttributes(dirPath + ergebnisDir+ergebnisFile, FileAttributes.Normal);
                     File.Create(dirPath + ergebnisDir + ergebnisFile).Close();
                 }
             }
