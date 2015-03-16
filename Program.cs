@@ -65,7 +65,7 @@ namespace TextSorter
                     endSpeicherDouble.Sort();
                     ergebnisString = "File: " + files[i] + " Minimum: " + endSpeicherDouble.First() + " Maximum: " + endSpeicherDouble.Last();
                     endErgebnis.WriteLine(ergebnisString);
-                    Console.WriteLine("\n\nEnde Datei_" + (i+1)+"von "+anzahlDirs+"\n\n");
+                    Console.WriteLine("\n\nEnde Datei_" + (i+1)+" von "+anzahlDirs+"\n\n");
                 }
 
                 Console.WriteLine("ENDE");
