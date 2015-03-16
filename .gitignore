@@ -41,3 +41,18 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+bin/Debug/ergebnis.txt
+bin/Debug/TextSorter.exe
+bin/Debug/TextSorter.pdb
+bin/Debug/TextSorter.vshost.exe.config
+bin/Debug/TextSorter.vshost.exe
+bin/Debug/TextSorter.exe.config
+bin/Debug/TextSorter.vshost.exe.manifest
+obj/Debug/TextSorter.pdb
+obj/Debug/TextSorter.exe
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/Debug/TextSorter.csprojResolveAssemblyReference.cache
+obj/Debug/TextSorter.csproj.FileListAbsolute.txt
+obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
