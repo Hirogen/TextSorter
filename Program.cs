@@ -12,9 +12,10 @@ namespace TextSorter
     {
         static void Main(string[] args)
         {
-            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Downloads\Wien Raster\RasterFiles\Mah\";
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\asd\Raster\";
             string ergebnisDir = @"\Ergebnis\";
-            string ergebnisFile = "ergebnis.txt" , ergebnisString;
+            string ergebnisFile = "ergebnis.txt";
+            StringBuilder ergebnisString;
             String[] allLines, files;
             StreamWriter endErgebnis;
             List<string> listString, zwischenSpeicher;
@@ -38,6 +39,7 @@ namespace TextSorter
             }
             try
             {
+                ergebnisString = new StringBuilder();
                 endErgebnis = new StreamWriter(dirPath + ergebnisDir + ergebnisFile);
                 files = Directory.GetFiles(dirPath);
                 int anzahlDirs = files.Length;
@@ -61,13 +63,13 @@ namespace TextSorter
                     }
 
                     endSpeicherDouble.Sort();
-                    ergebnisString = "File: " + files[i] + " Minimum: " + endSpeicherDouble.First() + " Maximum: " + endSpeicherDouble.Last();
-                    endErgebnis.WriteLine(ergebnisString);
+                    ergebnisString.Append("File: " + files[i] + " Minimum: " + endSpeicherDouble.First() + " Maximum: " + endSpeicherDouble.Last()+"\n");
                     Console.WriteLine("\n\nEnde Datei_" + (i+1)+" von "+anzahlDirs+"\n\n");
                 }
-
+                endErgebnis.WriteLine(ergebnisString);
                 Console.WriteLine("ENDE");
                 Console.ReadKey();
+                endErgebnis.Close();
 		            
            }
            catch (Exception e)
