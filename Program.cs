@@ -52,7 +52,8 @@ namespace TextSorter
                     endSpeicherDouble = new List<double>();
                     zwischenSpeicher = new List<string>();
                     int anzahlZeilen = allLines.Length;
-                    for (int y = 0; y < anzahlZeilen; y++)
+                    //ignoring first 6 Lines
+                    for (int y = 6; y < anzahlZeilen; y++)
                     {
                         String[] split = allLines[y].Split(' ');
                         zwischenSpeicher = split.ToList();
