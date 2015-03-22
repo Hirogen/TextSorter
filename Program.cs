@@ -12,7 +12,7 @@ namespace TextSorter
     {
         static void Main(string[] args)
         {
-            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\asd\Raster\";
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\Downloads\Wien Raster\RasterFiles\";
             string ergebnisDir = @"\Ergebnis\";
             string ergebnisFile = "ergebnis.txt";
             StringBuilder ergebnisString;
@@ -52,7 +52,7 @@ namespace TextSorter
                     endSpeicherDouble = new List<double>();
                     zwischenSpeicher = new List<string>();
                     int anzahlZeilen = allLines.Length;
-                    //ignoring first 6 Lines
+                    //ignoring first 6 Lines, .asc files have meta data in the first 6 lines, that are not relevant
                     for (int y = 6; y < anzahlZeilen; y++)
                     {
                         String[] split = allLines[y].Split(' ');
